@@ -1,0 +1,35 @@
+/* 2 questions to ask: What are we affecting? What are we doing to it?*/
+
+h1 {
+    color: rgb(46, 86, 46);
+    text-align: center;
+    font-size: 50px;
+}
+
+/*This acts on all p tags*/
+p {
+    background-color: aquamarine;
+}
+
+/*Need a class to select one, so alter this in html*/
+
+/*Use a . for classes. Classes can be repeatedly used*/
+.nogreen {
+    background-color: white;
+}
+
+/*Use a # for id's. They should only be used for one element.*/
+#mytable {
+    background-color: orange;
+}
+
+/* tag < class < id */
+/* 1 < 10 < 100 */
+
+.data {
+    background-color: aqua;
+}
+
+.italics {
+    font-style: italic;
+}
