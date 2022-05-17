@@ -1,5 +1,14 @@
 /* 2 questions to ask: What are we affecting? What are we doing to it?*/
 
+/* A general selector that will grab everything. (Wild card) */
+* {
+    margin:0px;
+    /* padding:0px;   Having the padding is important for lists and decreases space in between even more Padding allows you to see more of the background color and padding makes things larger. Margins push everything away from the item and does not affect the size of the item. If the margin or padding is above 30px, there is likely another way to do this.*/
+}
+
+/* Can look at padding, boarder, and margin areas through inspect. */
+/* If you don't want increases in padding, boarder, and margins on all sides, specify which side. */
+
 h1 {
     color: rgb(46, 86, 46);
     text-align: center;
@@ -9,6 +18,7 @@ h1 {
 /*This acts on all p tags*/
 p {
     background-color: aquamarine;
+    padding: 10px;
 }
 
 /*Need a class to select one, so alter this in html*/
@@ -32,4 +42,30 @@ p {
 
 .italics {
     font-style: italic;
+}
+
+.about {
+    width: 600px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    margin-left: 20px;
+}
+
+/* Most elements are block elements (they will not be next to each other by default). To get them next to each other, to want to get it as an inline block. */
+.red {
+    width: 100px;
+    height: 300px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 100px;
+}
+.blue {
+    width: 100px;
+    height: 300px;
+    background-color: blue;
+    display: inline-block;
 }
